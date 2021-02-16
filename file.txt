@@ -1,5 +1,1 @@
-wd40 2
-q 12
-err 2123
-awdawd 12
-abecadlo_z_pieca_spadlo 1
+abcdefgh

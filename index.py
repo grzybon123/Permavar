@@ -1,6 +1,21 @@
 var_w = open('file.txt', 'a+')
 var_r = open('file.txt', 'r')
 
+
+def liststr(s): #full credit to geeks for geeks for this code
+    # initialize an empty string
+    str1 = ' '
+    return (str1.join(s))
+
+
+
+
+
+
+
+
+
+
 def create(name, value):
     if ' ' in name:
         print(ValueError("sadly we do not allow spaces in the names of variebles"))
@@ -20,11 +35,14 @@ def find(input):
         exit()
 
 def add(name, how_much):
-    for varieb in var_r:
-        d = varieb.split(' ')
-        if d[0] == name:
-            
+    num = -1
+    for x in var_r:
+        num += 1
+        lis = x.split(' ')
+        if lis[0] == name:
+            lis[1] = 12
+            print(lis)
 
 
 
-add('abecadlo_z_pieca_spadlo' , '123')
+
