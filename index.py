@@ -3,10 +3,10 @@ var_r = open('file.txt', 'r')
 
 def create(name, value):
     if ' ' in name:
-        print(ValueError("sadly we do not allow spaces in the names of variebles"))
+        print(ValueError("SPACES"))
         exit()
     elif name in var_r.read():
-        print(ValueError("the name of varieble you are trying to create alleady exists "))
+        print(ValueError("THE_VARIEBLE_ARLEADY_EXISTS"))
         exit()
     var_w.write(f'{name} {value} \n')
 
@@ -16,7 +16,7 @@ def find(input):
         if d[0] == input:
             return d[1]
     if find(input) == None:
-        print(ValueError("the varieble you specified does not exist"))
+        print(ValueError("THE_VARIEBLE_DOES_NOT_EXIST"))
         exit()
 
 def add(name, how_much):
